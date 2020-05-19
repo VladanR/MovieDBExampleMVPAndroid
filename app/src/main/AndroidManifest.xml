@@ -1,0 +1,42 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="popmovies.udacity.theMovieDBExampleMVP">
+
+    <!-- Required to obtain movies from API -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name=".theMovieDBExampleMVP.PopMovies"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".theMovieDBExampleMVP.view.activities.PopMoviesActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".theMovieDBExampleMVP.view.activities.SettingsActivity"
+            android:label="@string/action_settings"
+            android:theme="@style/SettingsTheme" />
+        <activity
+            android:name=".theMovieDBExampleMVP.view.activities.MovieDetailsActivity"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName=".theMovieDBExampleMVP.view.activities.PopMoviesActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".theMovieDBExampleMVP.view.activities.PopMoviesActivity" />
+        </activity>
+        <provider
+            android:authorities="@string/content_authority"
+            android:name=".theMovieDBExampleMVP.model.database.MovieProvider"
+            android:exported="false"
+            android:syncable="true" />
+    </application>
+
+</manifest>

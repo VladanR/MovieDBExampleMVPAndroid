@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+    <string name="app_name">PopMovies</string>
+
+    <!-- Toast messages -->
+    <string name="no_internet_connection_message">Please check your internet connection</string>
+    <string name="api_experiencing_problems_message">We are experiencing some problems at the moment. Please try later.</string>
+
+    <!-- Settings -->
+    <string name="pref_gallery_type_title">In gallery show</string>
+    <string name="prefs_popular_label">Popular</string>
+    <string name="prefs_top_rated_label">Top Rated</string>
+    <string name="prefs_favorite_label">Favorites</string>
+    <string name="prefs_popular_value" translatable="false">popular</string>
+    <string name="prefs_top_rated_value" translatable="false">top_rated</string>
+    <string name="prefs_favorite_value" translatable="false">favorite</string>
+    <string name="pref_gallery_type_key" translatable="false">gallery_type</string>
+
+    <!-- Pop movies screen -->
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="movies_gallery">Movies gallery</string>
+
+    <!-- Movie details screen -->
+    <string name="title_activity_detail">Movie Details</string>
+    <string name="select_movie_to_see_details">Select a movie to see its details</string>
+    <string name="date_not_defined">Release date unknown</string>
+    <string name="rating_not_defined">Rating unknown</string>
+    <string name="movie_doesnt_exists">Chosen movie does not contains details</string>
+    <string name="movie_poster_description">Movie poster</string>
+    <string name="format_movie_details">Released on: <xliff:g id="released_on">%1$s</xliff:g> | Rating: <xliff:g id="rating">%2$s</xliff:g>/10</string>
+    <string name="trailers_title">Trailers</string>
+    <string name="reviews_title">Reviews</string>
+    <string name="action_share">Share</string>
+    <string name="add_to_favorites">Add to favorites</string>
+    <string name="remove_from_favorites">Remove from favorites</string>
+
+    <string name="content_authority">popmovies.udacity.com</string>
+</resources>
